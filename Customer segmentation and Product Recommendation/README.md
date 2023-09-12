@@ -41,11 +41,15 @@ Which the columns name and columns description is following the table down below
 - First, we'll import dataset and see the example what we got by using df.head()
 
   Pic.1
-  <img width="1070" alt="image" src="https://github.com/NattaQ/Customer-Segmentation/assets/115794048/01a3fdc9-58a1-4849-bf16-dc164288bbce">
+  
+  ![image](https://github.com/NattaQ/Customer-Analytics/assets/115794048/e611eb2e-2573-4edc-8f0b-00e91bd71ec8)
+
 - We only select customer who is supermarket's member by identity at Customer who has Customer Code.
 
   Pic.2
-  <img width="1069" alt="image" src="https://github.com/NattaQ/Customer-Segmentation/assets/115794048/11836752-e0ab-4c1d-865d-7ebfeaf35eb9">
+  
+  ![image](https://github.com/NattaQ/Customer-Analytics/assets/115794048/572dbaaf-ceb2-4a67-a99f-01b9034af10c)
+
 
 ### Features Creation
 
@@ -65,14 +69,19 @@ Which the columns name and columns description is following the table down below
 Hear is guideline how to calculate each feature.
 
 Pic.3
-![image](https://github.com/NattaQ/Customer-Segmentation/assets/115794048/5d5f91b6-eec6-4fa5-95c5-a50daeeefb09)
+
+<img width="402" alt="image" src="https://github.com/NattaQ/Customer-Analytics/assets/115794048/afcc188d-ec6d-4197-a53b-2235bdd6cd8e">
+<img width="578" alt="image" src="https://github.com/NattaQ/Customer-Analytics/assets/115794048/9b628237-9dd0-4d06-b3a3-e914ca8786da">
+
 
 ### Prepare feature before do Clustering
 
 - Check Distribution of Data
 
 Pic.4
-![image](https://github.com/NattaQ/Customer-Segmentation/assets/115794048/036c61e3-0f6b-4fdb-9042-2afb0a63468a)
+
+![image](https://github.com/NattaQ/Customer-Analytics/assets/115794048/e1cca26d-40bf-41b0-a3fc-6f773ec8d9d9)
+
 
 From Pic.4, we'll see mostly features aren't normal distribution and K-means is a distance-based clustering algorithm, and it is sensitive to the scale and shape of the features.
 My oppinion, Data Transformation to Normal Distribution is nescessary by appling with PowerTransformer.
@@ -80,7 +89,9 @@ My oppinion, Data Transformation to Normal Distribution is nescessary by appling
 After that we can check distribution of the data and we will see.
 
 Pic.5
-![image](https://github.com/NattaQ/Customer-Segmentation/assets/115794048/a8401b3a-3684-44d6-88bb-6a2b0756372f)
+
+![image](https://github.com/NattaQ/Customer-Analytics/assets/115794048/c34fbccf-a86a-4982-997e-9cb31d98dcb3)
+
 
 ### How many number of Cluster is the best
 
@@ -88,7 +99,9 @@ We'll know by appling Silhouette_score, by I looping for calculate Silhouette_sc
 And the result shown that 9 clusters is the best at silhouette_score 0.2061.
 
 Pic.6
-![image](https://github.com/NattaQ/Customer-Segmentation/assets/115794048/ceab82ed-ab50-4a91-9520-0332504644f0)
+
+![image](https://github.com/NattaQ/Customer-Analytics/assets/115794048/1491f39d-d79c-4ddd-9da8-3e82da947bf3)
+
 
 ### K-Medoids
 After we got number of clusting that suite with our dataset. After that we'll do K-Medoids. 
@@ -104,7 +117,8 @@ We have to use PCA for dismension reduction then we can plot the result.
 
 Pic.7
 
-![image](https://github.com/NattaQ/Customer-Segmentation/assets/115794048/01ca724c-df31-402d-b150-e6c6a5a6d098)
+![image](https://github.com/NattaQ/Customer-Analytics/assets/115794048/b0fc0283-28a1-4a5a-8248-5158ca43ce61)
+
 
 
 ### Feature Important 
@@ -115,14 +129,18 @@ By we split train & test set by test set is 20% and the rest is train set.
 The result was show below.
 
 Pic.8
-![image](https://github.com/NattaQ/Customer-Segmentation/assets/115794048/c18619d1-35cd-4176-adb2-bf3dd68170e7)
+
+![image](https://github.com/NattaQ/Customer-Analytics/assets/115794048/941b4e6c-96c8-4891-9ae1-b1fd53376619)
+
 
 From Pic.8 The important features are SPEND, Total_time, Lifetime, Frequency, CLTV, Average Spending per Transaction, Lifestate_OT and Mean time between purchase.
 
 To view data easily we're resulting all of feature and customer group into a bar chart below. 
 
 Pic.9
-![image](https://github.com/NattaQ/Customer-Segmentation/assets/115794048/205ad8cc-517e-4b37-9cef-7b0ca7facba8)
+
+![image](https://github.com/NattaQ/Customer-Analytics/assets/115794048/c3ea3d43-041c-4260-befa-7f2ff28dd99b)
+
 
 
 After we saw character of each customer group, we can catagorized them into 5 types.
