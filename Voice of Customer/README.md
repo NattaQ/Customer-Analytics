@@ -38,25 +38,24 @@ Topic modeling helps in uncovering the hidden thematic structure within contexts
 
 From Dataset we have, we can catagorize review into 4 groups by using pyLDAvis libary.
 
-- 1st Group :
+- 1st Group : Satify in Food Quality but waiting queue a bit long
 
   <img width="470" alt="image" src="https://github.com/NattaQ/Customer-Analytics/assets/115794048/0d526194-739f-4e95-b4db-a316b2739a3c">
 
 
-- 2nd Group :
+- 2nd Group : Satify in Food Quality and services 
 
   <img width="471" alt="image" src="https://github.com/NattaQ/Customer-Analytics/assets/115794048/c5225120-c9e2-42d1-a85f-89ee2583f7c1">
 
   
-- 3rd Group :
+- 3rd Group : Satify in Food Quality and reasonable price
 
   <img width="469" alt="image" src="https://github.com/NattaQ/Customer-Analytics/assets/115794048/cec06ead-0cd4-403f-b565-fc04ae4af9fe">
   
-- 4th Group :
+- 4th Group : Unale to classify because It similar with 1st, 2nd and 3rd Group.
 
   <img width="470" alt="image" src="https://github.com/NattaQ/Customer-Analytics/assets/115794048/ea07f313-0451-4eed-b5ad-772ec1a13521">
 
-  
 
 
 
