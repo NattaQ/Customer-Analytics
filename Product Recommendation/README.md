@@ -47,6 +47,7 @@ Pic.7
 Then, we created a graph representation of item similarities, where nodes represent items, edges represent the similarity between items, and the thickness of edges reflects the strength of similarity.
 
 Pic.8
+
 ![image](https://github.com/NattaQ/Customer-Analytics/assets/115794048/d52ba767-05db-4e6c-8cac-65ac81e1fddf)
 
 From Pic.8 , The image on the left displays a group of products that exhibithigh similarity. Only 183 pairshave co-sin similarity morethan 0.65.
